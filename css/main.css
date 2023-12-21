@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.w-fit{
+    width: fit-content;
+}
+.clr{
+    clear: both;
+}
+:has(.hom.active) nav{
+    background-color: transparent !important;
+}
+:has(.hom.active) nav li a,
+:has(.hom.active) .navbar-brand{
+    color: white !important;
+}
+.container{
+    width: 80%;
+}
+.section-padding{
+    padding-block: 100px;
+}
+.bg-gray{
+    background-color: #f7f7f7;
+}
+.navbar-nav > li .active::before {
+    width: 85% !important;
+    transition: width .5s;
+}
+input{
+    border: 0 !important;
+}
+/* Start NavBar */
+.navbar{
+    --bs-navbar-hover-color: #000000 !important;
+    position: fixed !important;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.navbar-nav{
+    --bs-nav-link-color: #000000 !important;
+    font-weight: 400;
+}
+.navbar a{
+    position: relative;
+}
+.navbar li a:before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 13px;
+    left: 5px;
+    background-color: #222;
+}
+.nav-link{
+    display: inline-block !important;
+}
+/* Start Home */
+.home{
+    background-image: linear-gradient(#0000009d, #0000009d) ,url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.home .home-content{
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #fff;
+}
+.home .home-content h2{
+    font-size: 50px;
+    font-weight: 800;
+}
+.home .home-content h1{
+    font-size: 60px;
+}
+.home-content .anim::after{
+    content: ' |';
+    font-weight: 400;
+    animation-name: typing;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    0%{content: ' D|';}
+    1.25%{content: ' Da|';}
+    2.5%{content: ' Dan|';}
+    3.75%{content: ' Dani|';}
+    5%{content: ' Danie|';}
+    6.25%{content: ' Daniel|';}
+    7.5%{content: ' Daniels|';}
+    8.75%{content: ' Daniel|';}
+    10%{content: ' Danie|';}
+    11.25%{content: ' Dani|';}
+    12.5%{content: ' Dan|';}
+    13.75%{content: ' Da|';}
+    15%{content: ' D|';}
+    16.25%{content: '|';}
+    17.5%{content: ' D|';}
+    18.75%{content: ' De|';}
+    20%{content: ' Dev|';}
+    21.25%{content: ' Deve|';}
+    22.5%{content: ' Devel|';}
+    23.75%{content: ' Develo|';}
+    25%{content: ' Develop|';}
+    26.25%{content: ' Develope|';}
+    27.5%{content: ' Developer|';}
+    28.75%{content: ' Develope|';}
+    30%{content: ' Develop|';}
+    31.25%{content: ' Develo|';}
+    32.5%{content: ' Devel|';}
+    33.75%{content: ' Deve|';}
+    35%{content: ' Dev|';}
+    36.25%{content: ' De|';}
+    37.5%{content: ' D|';}
+    38.75%{content: ' |';}
+    40%{content: ' L|';}
+    42.2%{content: ' La|';}
+    44.4%{content: ' Lar|';}
+    46.6%{content: ' Larr|';}
+    48.8%{content: ' Larry|';}
+    51%{content: ' Larry |';}
+    53.2%{content: ' Larry D|';}
+    55.4%{content: ' Larry Da|';}
+    57.6%{content: ' Larry Dan|';}
+    59.8%{content: ' Larry Dani|';}
+    62%{content: ' Larry Danie|';}
+    64.2%{content: ' Larry Daniel|';}
+    66.4%{content: ' Larry Daniels|';}
+    68.6%{content: ' Larry Daniel|';}
+    70.8%{content: ' Larry Danie|';}
+    73%{content: ' Larry Dani|';}
+    75.2%{content: ' Larry Dan|';}
+    77.4%{content: ' Larry Da|';}
+    79.6%{content: ' Larry D|';}
+    81.8%{content: ' Larry |';}
+    84%{content: ' Larry|';}
+    86.2%{content: ' Larr|';}
+    88.4%{content: ' Lar|';}
+    90.6%{content: ' La|';}
+    92.8%{content: ' L|';}
+    95%{content: ' |';}
+    100%{content: '|';}
+}
+.social-icon span {
+    font-size: 14px;
+    width: 35px !important;
+    height: 35px !important;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+/* Start About */
+.about .title{
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.about .title-about{
+    line-height: 1.6;
+    font-size: 15px;
+}
+.skills .progress{
+    height: 30px;
+}
+.skills h6{
+    padding-top: 5px;
+    font-size: 14px;
+}
+.about .btn{
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: background-color .5s, color .5s ;
+}
+.about .btn-1:hover{
+    background-color: #fff;
+    color: #000;
+}
+.about .btn-2:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.about .image:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -40px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+/* Start Services */
+.same-txt {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+    margin-bottom: 80px;
+}
+.same-txt::after{
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.item .social-icon i{
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: background-color 0.5s, color 0.5s;
+}
+.space{
+    word-spacing: 2px;
+    font-size: 14px;
+}
+.item:hover i{
+    background-color: #000;
+    color: #fff;
+}
+/* Start Work */
+.port-nav{
+    color: #000;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #000;
+}
+.nav li button{
+    position: relative;
+}
+.nav li button::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 8px;
+    left: 10px;
+    background-color: #222;
+}
+.nav > li .active::before {
+    width: 70% !important;
+    transition: width .5s;
+}
+.layer{
+    top: 10px;
+    bottom: -10px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+.image-port:hover .layer{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #fffffff7 !important
+}
+.layer .social-icon i {
+    display: inline-block;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.social-icon .icon-one:hover i,
+.social-icon .icon-two:hover i,
+.social-icon .icon-three:hover i,
+.social-icon .icon-four:hover i{
+    background-color: #fff !important;
+    color: #000000 !important;
+    border: 1px solid #000;
+}
+.layer-info{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+/* Start Testmonial */
+.client-inf img{
+    width: 15%;
+    height: 15%;
+}
+.carousel-indicators{
+    bottom: -30%;
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #BEC7C6 !important;
+}
+.carousel-indicators button:hover {
+    background-color: #5e6965ca !important;
+}
+.client-inf h6{
+    font-size: 12px;
+}
+.team-item{
+    background-color: #5B5B5B;
+}
+.team-item .layer{
+    top: 10px;
+    bottom: -10px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    transition: all .5s;
+}
+.team-item:hover .layer{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #fffffff7 !important;
+    transform: rotateY(0deg) scale(1, 1) !important;
+}
+.team-item .image-port{
+    overflow: hidden;
+}
+.team-item .image-port img{
+    transition: scale .5s;
+}
+.team-item .image-port:hover img{
+    scale: 1.2;
+}
+.layer .social-icon .fix i {
+    display: inline-block;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+textarea{
+    resize: vertical; 
+    max-height: 200px;
+    border: 0 !important;
+}
+.form-control:focus {
+    color: black;
+    background-color: #F4F4F4;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+.btn3{
+    transition: all .5s;
+}
+.bt:hover .btn3{
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+}
+/* Start Footer */
+.txt-footer{
+    color: #748182;
+    font-size: 14px;
+}

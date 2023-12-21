@@ -1,0 +1,43 @@
+@media screen and (max-width: 991.30px){
+    :has(.hom.active) nav{
+        background-color: white !important;
+    }
+    :has(.hom.active) nav li a,
+    :has(.hom.active) .navbar-brand{
+    color: #000 !important;
+}
+    .navbar-collapse {
+        text-align: center;
+        margin-block: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #000 ;
+    }
+    .navbar>.container{
+        max-width: 100%;
+    }
+}
+@media (max-width: 575.98px) {
+    .container{
+        width: 100% !important;
+    }
+    .client-inf img{
+        width: 25%;
+        height: 25%;
+    }
+    .carousel-indicators{
+        bottom: -20%;
+    }
+    #contact .row{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 15px;
+        margin: 0 !important;
+    }
+    #contact .tx-area{
+        padding-top: 15px;
+    }
+    #contact .bt{
+        margin: 0 !important;
+    }
+}
